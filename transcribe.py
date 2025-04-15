@@ -55,4 +55,4 @@ async def openAIFunc(prompt):
     # print(response.choices[0].message.content)
     return response.choices[0].message.content
     
-asyncio.run(openAIFunc())
+# asyncio.run(openAIFunc())
