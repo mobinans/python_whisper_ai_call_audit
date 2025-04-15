@@ -28,7 +28,7 @@ async def whisperData(audio_name):
     
     gdown.download(audio_name, "audio.mp3", quiet=False)
     
-    model = whisper.load_model("medium") # Or 'small', 'medium', 'large'
+    model = whisper.load_model("small") # Or 'small', 'medium', 'large'
     audio = whisper.load_audio("audio.mp3")
     audio = whisper.pad_or_trim(audio)
     mel = whisper.log_mel_spectrogram(audio).to(model.device)
